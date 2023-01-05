@@ -3,7 +3,7 @@
 
 
 int main() {
-	fraction numbers;
+	fraction numbers{1, 2};
 	int x, y;
 	std::cout << "\nEnter two numbers for composition: ";
 	std::cin >> x >> y;

@@ -1,31 +1,35 @@
 #pragma once
+#ifndef _fraction_h_
+#define _fraction_h_
+#include <iostream>
+
 class fraction
 {
-public:
+public: 
 	fraction(int numerator, int denominator);
 
-	void composition(int numerator, int denominator) {}
+	void composition(int numerator, int denominator);
 
-	int getCompositionResult() const {}
+	int getCompositionResult() const;
 
-	void subtraction(int numerator, int denominator) {}
+	void subtraction(int numerator, int denominator);
 
-	int getSubtractionResult() const {}
+	int getSubtractionResult() const;
 
-	void multiplication(int numerator, int denominator) {}
+	void multiplication(int numerator, int denominator);
 
-	int getMultiplicationResult() const {}
+	int getMultiplicationResult() const;
 
-	void division(int numerator, int denominator) {}
+	void division(int numerator, int denominator);
 
-	int getDivisionResult() const {}
+	int getDivisionResult() const;
 
 private:
 	int _numerator;
 	int _denominator;
 };
 
-
+#endif
 
 
 

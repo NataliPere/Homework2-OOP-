@@ -1,42 +1,41 @@
 #include "fraction.h"
+#include <iostream>
 
-fraction::fraction(int numerator, int denominator) : _numerator(numerator), _denominator(denominator) {
+fraction::fraction(int numerator, int denominator) : _numerator(numerator), _denominator(denominator) {}
 
-
-	void composition(int numerator, int denominator) {
+	void fraction::composition(int numerator, int denominator) {
 		this->_numerator = numerator;
 		this->_denominator = denominator;
 	}
 
-	int getCompositionResult(int numerator, int denominator) const {
+	int fraction::getCompositionResult() const {
 		return _numerator + _denominator;
 	}
 
-	void subtraction(int numerator, int denominator) {
+	void fraction::subtraction(int numerator, int denominator) {
 		this->_numerator = numerator;
 		this->_denominator = denominator;
 	}
 
-	int getSubtractionResult(int numerator, int denominator) const {
+	int fraction::getSubtractionResult() const {
 		return _numerator - _denominator;
 	}
 
-	void multiplication(int numerator, int denominator) {
+	void fraction::multiplication(int numerator, int denominator) {
 		this->_numerator = numerator;
 		this->_denominator = denominator;
 	}
 
-	int getMultiplicationResult() const {
+	int fraction::getMultiplicationResult() const {
 		return _numerator * _denominator;
 	}
 
-	void division(int numerator, int denominator) {
+	void fraction::division(int numerator, int denominator) {
 		this->_numerator = numerator;
 		this->_denominator = denominator;
 	}
 
-	int getDivisionResult() const {
+	int fraction::getDivisionResult() const {
 		return _numerator / _denominator;
 	}
 
-}
